@@ -18,7 +18,7 @@
       <section class="container mx-auto my-10 flex flex-col gap-5 md:flex-row">
         <!-- shape card container -->
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
-          <!-- Card -->
+          <!--Triangle Card -->
           <div class="card text-center border-2 border-gray-200 rounded-lg">
             <figure>
               <img
@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <!-- Card -->
+          <!--Rectangle Card -->
           <div class="card text-center border-2 border-gray-200 rounded-lg">
             <figure>
               <img
@@ -74,15 +74,31 @@
                 Rectangle
               </h2>
               <div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Area (A) = W X L</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="rectangle-width"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="width"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="rectangle-length"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="length"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
               </div>
-              <div class="card-actions justify-end">
-                <button
-                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
-                >
-                  Calculate
-                </button>
-              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                onclick="calculateRectangleArea()"
+              >
+                Calculate
+              </button>
             </div>
           </div>
 
@@ -100,15 +116,30 @@
                 Parallelogram
               </h2>
               <div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Area (A) = W X I</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="rectangle-base"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="w"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="rectangle-height"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="I"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
               </div>
-              <div class="card-actions justify-end">
-                <button
-                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
-                >
-                  Calculate
-                </button>
-              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
 
@@ -122,15 +153,30 @@
                 Rhombus
               </h2>
               <div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Area (A) = W X I</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="rectangle-base"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="w"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="rectangle-height"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="I"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
               </div>
-              <div class="card-actions justify-end">
-                <button
-                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
-                >
-                  Calculate
-                </button>
-              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
 
@@ -148,15 +194,30 @@
                 Pentagon
               </h2>
               <div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Area (A) = W X I</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="rectangle-base"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="w"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="rectangle-height"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="I"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
               </div>
-              <div class="card-actions justify-end">
-                <button
-                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
-                >
-                  Calculate
-                </button>
-              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
 
@@ -170,15 +231,30 @@
                 Ellipse
               </h2>
               <div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Area (A) = W X I</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="rectangle-base"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="w"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="rectangle-height"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="I"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
               </div>
-              <div class="card-actions justify-end">
-                <button
-                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
-                >
-                  Calculate
-                </button>
-              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
         </div>
@@ -193,5 +269,6 @@
     </main>
 
     <script src="./scripts/triangle.js"></script>
+    <script src="./scripts/rectangle.js"></script>
   </body>
 </html>
