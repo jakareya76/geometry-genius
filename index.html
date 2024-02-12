@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- Main Content Container -->
+      <section class="container mx-auto my-10 flex flex-col gap-5 md:flex-row">
+        <!-- shape card container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img
+                class="px-5 pt-8"
+                src="./images/triangle.png"
+                alt="triangle"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Triangle
+              </h2>
+              <div>
+                <p>Area (A) = 0.5 x b x h</p>
+                <div class="flex items-center justify-center gap-2 my-4">
+                  <input
+                    id="triangle-base"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="b"
+                  />
+                  <span class="text-xl">cm</span>
+                  <input
+                    id="triangle-height"
+                    class="w-[85px] text-2xl px-2 bg-[#F1F1F1] rounded-sm outline-none"
+                    type="text"
+                    placeholder="h"
+                  />
+                  <span class="text-xl">cm</span>
+                </div>
+              </div>
+
+              <button
+                class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                onclick="calculateTriangleArea()"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img
+                class="px-5 pt-8"
+                src="./images/rectangle.png"
+                alt="Rectangle"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Rectangle
+              </h2>
+              <div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img
+                class="px-5 pt-8"
+                src="./images/parallelogram.png"
+                alt="parallelogram"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Parallelogram
+              </h2>
+              <div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img class="px-5 pt-8" src="./images/rhombus.png" alt="rhombus" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Rhombus
+              </h2>
+              <div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img
+                class="px-5 pt-8"
+                src="./images/pentagon.png"
+                alt="pentagon"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Pentagon
+              </h2>
+              <div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card text-center border-2 border-gray-200 rounded-lg">
+            <figure>
+              <img class="px-5 pt-8" src="./images/ellipse.png" alt="ellipse" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">
+                Ellipse
+              </h2>
+              <div>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white text-xl w-full hover:bg-[#3c708f]"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- area calculation container -->
+        <div class="md:w-96 border-2 border-gray-200 rounded-lg">
+          <h3 class="text-3xl text-center px-4 py-8 underline font-semibold">
+            Area Calculation
+          </h3>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/triangle.js"></script>
+  </body>
+</html>
