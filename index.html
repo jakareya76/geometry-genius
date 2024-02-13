@@ -15,11 +15,11 @@
     <header></header>
     <main>
       <!-- Main Content Container -->
-      <section class="container mx-auto my-10 flex flex-col gap-5 md:flex-row">
+      <section class="container flex flex-col gap-5 mx-auto my-10 md:flex-row">
         <!-- shape card container -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
           <!--Triangle Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img
                 class="px-5 pt-8"
@@ -61,7 +61,7 @@
           </div>
 
           <!--Rectangle Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img
                 class="px-5 pt-8"
@@ -103,7 +103,7 @@
           </div>
 
           <!-- Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img
                 class="px-5 pt-8"
@@ -144,7 +144,7 @@
           </div>
 
           <!-- Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img class="px-5 pt-8" src="./images/rhombus.png" alt="rhombus" />
             </figure>
@@ -181,7 +181,7 @@
           </div>
 
           <!-- Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img
                 class="px-5 pt-8"
@@ -222,7 +222,7 @@
           </div>
 
           <!-- Card -->
-          <div class="card text-center border-2 border-gray-200 rounded-lg">
+          <div class="text-center border-2 border-gray-200 rounded-lg card">
             <figure>
               <img class="px-5 pt-8" src="./images/ellipse.png" alt="ellipse" />
             </figure>
@@ -260,10 +260,15 @@
         </div>
 
         <!-- area calculation container -->
-        <div class="md:w-96 border-2 border-gray-200 rounded-lg">
-          <h3 class="text-3xl text-center px-4 py-8 underline font-semibold">
+        <div class="border-2 border-gray-200 rounded-lg md:w-96">
+          <h3 class="px-4 py-8 text-3xl font-semibold text-center underline">
             Area Calculation
           </h3>
+
+          <ul
+            id="result-area"
+            class="space-y-5 text-2xl font-semibold text-center"
+          ></ul>
         </div>
       </section>
     </main>
