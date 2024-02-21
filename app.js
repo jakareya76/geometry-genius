@@ -66,6 +66,7 @@ function getInputValueById(inputFieldId) {
   return value;
 }
 
+// common function to set the result
 function setResult(value, name) {
   const elementContainer = document.getElementById("result-area");
   const element = document.createElement("li");
